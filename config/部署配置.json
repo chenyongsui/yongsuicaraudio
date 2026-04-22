@@ -1,0 +1,56 @@
+
+---
+
+## config/部署配置.json
+
+```json
+{
+  "projectName": "永岁汽车装潢小程序",
+  "projectId": "yongsuicaraudio",
+  "environment": "production",
+  
+  "cloudbase": {
+    "envId": "carserver-chenyongsui",
+    "region": "ap-shanghai",
+    "serviceName": "yongsuicaraudio"
+  },
+  
+  "admin": {
+    "wechatId": "jacky22109",
+    "phone": "18577817789",
+    "defaultAccount": "admin",
+    "defaultPassword": "auto-generate-on-deploy"
+  },
+  
+  "wechatPay": {
+    "mchId": "to_be_filled",
+    "notifyUrl": "https://carserver-chenyongsui.service.tcloudbase.com/pay-callback"
+  },
+  
+  "deployment": {
+    "autoDeploy": true,
+    "generateQRCode": true,
+    "qrCodeSize": 430,
+    "qrCodeColor": "#ff0000"
+  },
+  
+  "features": {
+    "enableCoupon": true,
+    "enablePoints": true,
+    "enableMarketingPush": true,
+    "enableRedMarquee": true,
+    "categories": [
+      { "name": "汽车脚垫", "key": "footpad", "defaultOrder": 1 },
+      { "name": "汽车贴膜", "key": "film", "defaultOrder": 2 },
+      { "name": "方向盘套", "key": "steering", "defaultOrder": 3 },
+      { "name": "汽车车衣", "key": "cover", "defaultOrder": 4 },
+      { "name": "上门洗车", "key": "wash", "defaultOrder": 5 }
+    ]
+  },
+  
+  "ui": {
+    "marqueeDefaultColor": "#ff0000",
+    "marqueeDefaultBgColor": "#ffffff",
+    "marqueeDefaultSpeed": 5
+  }
+}
